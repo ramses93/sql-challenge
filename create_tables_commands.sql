@@ -49,9 +49,6 @@ REFERENCES `Titles` (`title_id`);
 ALTER TABLE `Salaries` ADD CONSTRAINT `fk_Salaries_emp_no` FOREIGN KEY(`emp_no`)
 REFERENCES `Employees` (`emp_no`);
 
-ALTER TABLE `DeptManager` ADD CONSTRAINT `fk_DeptManager_dept_no` FOREIGN KEY(`dept_no`)
-REFERENCES `Departments` (`dept_no`);
-
 ALTER TABLE `DeptManager` ADD CONSTRAINT `fk_DeptManager_emp_no` FOREIGN KEY(`emp_no`)
 REFERENCES `Employees` (`emp_no`);
 
