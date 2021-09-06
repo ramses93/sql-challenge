@@ -57,6 +57,3 @@ REFERENCES `Employees` (`emp_no`);
 
 ALTER TABLE `DeptEmp` ADD CONSTRAINT `fk_DeptEmp_emp_no` FOREIGN KEY(`emp_no`)
 REFERENCES `Employees` (`emp_no`);
-
-ALTER TABLE `DeptEmp` ADD CONSTRAINT `fk_DeptEmp_dept_no` FOREIGN KEY(`dept_no`)
-REFERENCES `Departments` (`dept_no`);
