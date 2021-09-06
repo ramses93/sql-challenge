@@ -1,6 +1,6 @@
 ﻿CREATE TABLE `Employees` (
     `emp_no` VARCHAR(10),
-    `emp_tile_id` VARCHAR(10),
+    `emp_title_id` VARCHAR(10),
     `birth_date` DATE,
     `first_name` VARCHAR(20),
     `last_name` VARCHAR(20),
