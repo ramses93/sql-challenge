@@ -1,4 +1,5 @@
-﻿CREATE TABLE `Employees` (
+CREATE TABLE `Employees`
+(
     `emp_no` VARCHAR(10),
     `emp_title_id` VARCHAR(10),
     `birth_date` DATE,
@@ -42,7 +43,7 @@ CREATE TABLE `Departments` (
     )
 );
 
-ALTER TABLE `Employees` ADD CONSTRAINT `fk_Employees_emp_tile_id` FOREIGN KEY(`emp_tile_id`)
+ALTER TABLE `Employees` ADD CONSTRAINT `fk_Employees_emp_tile_id` FOREIGN KEY(`emp_title_id`)
 REFERENCES `Titles` (`title_id`);
 
 ALTER TABLE `Salaries` ADD CONSTRAINT `fk_Salaries_emp_no` FOREIGN KEY(`emp_no`)
